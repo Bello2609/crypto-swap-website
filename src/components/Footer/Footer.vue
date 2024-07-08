@@ -44,7 +44,7 @@
                 </div>
                 <div className="flex flex-col font-sans font-medium text-base mx-16 sm:mx-10">
                     <div className="bg-[#38384D] h-px mt-3"></div>
-                    <p className="text-[#616161] mt-5 text-base font-normal">Copyright ® 2024 Enterprise Hubs. All right reserved.</p>
+                    <p className="text-[#616161] mt-5 text-base font-normal">Copyright © 2020 - 2021. All rights reserved.</p>
                 </div>
             </div>
 </template>

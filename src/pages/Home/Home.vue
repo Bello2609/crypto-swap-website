@@ -12,14 +12,11 @@
                               <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>
                               <h4 className="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#fff] leading-[63px]">
                                    Building the Future of Mining Pools.
-                              </h4>
+                              </h4> 
                               <p className="w-[413px] md:w-fit sm:w-fit flex-wrap font-normal text-base text-[#ffffff] my-3">
                                    Enthusiastically mesh long-term high-impact infrastructures.
-                              </p>
-                              <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>
-                              <h4 className="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#fff] leading-[63px]">
-                                   Building the Future of Mining Pools.
-                              </h4>  <p className="w-[413px] md:w-fit sm:w-fit flex-wrap font-normal text-base text-[#ffffff] my-8">
+                              </p> 
+                              <p className="w-[413px] md:w-fit sm:w-fit flex-wrap font-normal text-base text-[#ffffff] my-8">
                                    Organically grow the holistic world view of disruptive innovation 
                                    with the new workplace diversity and empowerment. Leverage agile 
                                    frameworks to provide a robust synopsis for high level overviews.
