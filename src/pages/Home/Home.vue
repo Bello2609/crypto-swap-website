@@ -42,7 +42,36 @@
                          <div class="w-1/2">
                               <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>
                               <h4 className="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#000] leading-[63px]">
-                                   Key performance indicators.
+                                   <div class="w-[370px] h-[362px] bg-[#23A9D0] p-10 rounded-md">
+                <div class="flex items-center justify-center w-[100px] h-[100px] rounded-full bg-[#23A9D0]">
+                    <img :src="images.convertshape" alt="shape">
+                </div>
+                <h5 class="font-bold text-lg text-[#fff] my-5">Frameworks for a robust synopsis with issues.</h5>
+                <p class="text-base text-[#fff]">
+                    Capitalize on low hanging fruit to then identify a ballpark value 
+                    added within a activity to beta test.
+                </p>
+            </div>
+            <div class="w-[370px] h-[362px] bg-[#FCAE17] p-10 rounded-md">
+                <div class="flex items-center justify-center w-[100px] h-[100px] rounded-full">
+                    <img :src="images.element3" alt="shape">
+                </div>
+                <h5 class="font-bold text-lg text-[#181826] my-5">Frameworks for a robust synopsis with issues.</h5>
+                <p class="text-base text-[#181826]">
+                    Capitalize on low hanging fruit to then identify a ballpark value 
+                    added within a activity to beta test.
+                </p>
+            </div>
+            <div class="w-[370px] h-[362px] bg-[#ED5962] p-10 rounded-md">
+                <div class="flex items-center justify-center w-[100px] h-[100px] rounded-full">
+                    <img :src="images.cpu" alt="shape">
+                </div>
+                <h5 class="font-bold text-lg text-[#181826] my-5">Frameworks for a robust synopsis with issues.</h5>
+                <p class="text-base text-[#181826]">
+                    Capitalize on low hanging fruit to then identify a ballpark value 
+                    added within a activity to beta test.
+                </p>
+            </div>               Key performance indicators.
                               </h4>
                          </div>
                          <div class="w-1/2">
