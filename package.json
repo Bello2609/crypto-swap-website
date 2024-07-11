@@ -10,7 +10,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "echarts": "^5.5.1",
     "vue": "^3.4.29",
+    "vue-echarts": "^6.7.3",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {

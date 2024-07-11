@@ -1,5 +1,5 @@
 <script setup>
-    import Layout from "../../components/Layout/Layout.vue"
+    import Layout from "../Layout/Layout.vue"
     import Input from "@/components/Input/Input.vue";
 </script>
 <template>

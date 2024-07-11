@@ -12,6 +12,15 @@ import composition2 from "./assets/media/Composition2.png";
 import composition3 from "./assets/media/Composition3.png";
 import Illustration from "./assets/media/Illustration.png";
 import Illustration2 from "./assets/media/Illustration2.png";
+import earning from "./assets/media/earning.png";
+import payout from "./assets/media/payout.png";
+import wallet from "./assets/media/wallet.png";
+import logout from "./assets/media/logout.png";
+import bucket from "./assets/media/bucket.png";
+import dollar from "./assets/media/dollar.png";
+import coin from "./assets/media/coin.png";
+import bitcoin1 from "./assets/media/bitcoin1.png";
+import Extrapolated from "./assets/media/Extrapolated.png";
 
 export  {
     pursuit,
@@ -27,6 +36,15 @@ export  {
     composition2,
     composition3,
     Illustration,
-    Illustration2
+    Illustration2,
+    earning,
+    payout,
+    wallet,
+    logout,
+    bucket,
+    dollar,
+    coin,
+    bitcoin1,
+    Extrapolated
 
 }

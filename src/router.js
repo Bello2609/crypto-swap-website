@@ -4,6 +4,7 @@ import Signin from "./pages/Signin/Signin.vue";
 import Register from "./pages/Register/Register.vue";
 import GetInTouch from "./pages/GetInTouch/GetInTouch.vue";
 import AboutUs from "./pages/AboutUs/AboutUs.vue";
+import Dashboard from "./pages/Dashboard/Dashboard.vue";
 
 const routes = [
     {
@@ -15,6 +16,11 @@ const routes = [
         path: "/about-us",
         name: "About Us",
         component: AboutUs
+    },
+    {
+        path: "/dashboard",
+        name: "Dashboard",
+        component: Dashboard
     },
     {
         path: "/get-in-touch",
