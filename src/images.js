@@ -20,7 +20,12 @@ import bucket from "./assets/media/bucket.png";
 import dollar from "./assets/media/dollar.png";
 import coin from "./assets/media/coin.png";
 import bitcoin1 from "./assets/media/bitcoin1.png";
+import bitcoin2 from "./assets/media/bitcoin2.png";
 import Extrapolated from "./assets/media/Extrapolated.png";
+import ethereum1 from "./assets/media/ethereum1.png";
+import binance from "./assets/media/binance.png";
+import tether from "./assets/media/tether.png";
+import litecoin1 from "./assets/media/litecoin1.png";
 
 export  {
     pursuit,
@@ -45,6 +50,11 @@ export  {
     dollar,
     coin,
     bitcoin1,
-    Extrapolated
+    bitcoin2,
+    Extrapolated,
+    ethereum1,
+    binance,
+    tether,
+    litecoin1
 
 }

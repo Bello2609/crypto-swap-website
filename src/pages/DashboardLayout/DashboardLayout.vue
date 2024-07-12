@@ -3,7 +3,7 @@
     import DashboardHeader from '../../components/DashboardHeader/DashboardHeader.vue';
 </script>
 <template>
-    <div class="w-full h-[1000px] flex">
+    <div class="w-full h-[1200px] flex">
         <!-- sidebar -->
         <Sidebar />
         <!-- dashboard content -->
