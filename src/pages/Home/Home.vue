@@ -99,7 +99,7 @@
                                         dramatically maintain clicks-and-mortar solutions.
                                    </p>
                                    <div className="flex justify-center items-center w-[176px] h-[57px] font-medium bg-[#23A9D0] text-[#fff] p-3 w-40 h-12 rounded-full">
-                                        <RouterLink to="/"">
+                                        <RouterLink to="/">
                                              Call to Action
                                         </RouterLink>
                                    </div>
