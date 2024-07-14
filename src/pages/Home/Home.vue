@@ -140,7 +140,7 @@
                                    begin to visualize quality intellectual capital without superior collaboration.
                               </p>
                               <div className="flex justify-center items-center mt-8 w-[176px] h-[57px] font-medium bg-[#23A9D0] text-[#fff] p-3 w-40 h-12 rounded-full">
-                                   <RouterLink to="/">
+                                   <RouterLink to="/get-in-touch">
                                         Get in Touch
                                    </RouterLink>
                               </div>

@@ -64,7 +64,7 @@
                         Quickly maximize timely deliverables.
                     </p>
                     <div class="flex justify-center items-center w-[176px] h-[57px] font-medium bg-[#23A9D0] text-[#fff] p-3 w-40 h-12 rounded-full">
-                        <RouterLink>
+                        <RouterLink to="/get-in-touch">
                             Get In Touch
                         </RouterLink>
                     </div>

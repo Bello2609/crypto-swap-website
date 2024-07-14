@@ -18,7 +18,7 @@
                 <RouterLink to="/dashboard-payout-setting" class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold my-5 w-full h-full">
                     <img :src="images.wallet" alt="earning" class="mr-2" />Payout Settings
                 </RouterLink>
-                <RouterLink class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold w-full h-full">
+                <RouterLink to="/" class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold w-full h-full">
                     <img :src="images.logout" alt="earning" class="mr-2" />Logout
                 </RouterLink>
             </nav>
