@@ -9,10 +9,10 @@
         <div class="w-full">
             <h4 class="text-[#CACADA] text-sm font-bold">DASHBOARD</h4>
             <nav class="flex flex-col w-full">
-                <RouterLink class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold my-5 w-full h-full">
+                <RouterLink to="/dashboard" class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold my-5 w-full h-full">
                     <img :src="images.earning" alt="earning" class="mr-2" />Your Earnings
                 </RouterLink>
-                <RouterLink class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold w-full h-full">
+                <RouterLink to="/dashboard-payment-history" class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold w-full h-full">
                     <img :src="images.payout" alt="earning" class="mr-2" />Payout History
                 </RouterLink>
                 <RouterLink to="/dashboard-payout-setting" class="flex items-center text-[#CACADA] hover:bg-[#23A9D0] focus:bg-[#23A9D0] cursor-pointer p-3 rounded-md text-sm font-bold my-5 w-full h-full">

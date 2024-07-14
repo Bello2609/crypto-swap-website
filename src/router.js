@@ -6,6 +6,7 @@ import GetInTouch from "./pages/GetInTouch/GetInTouch.vue";
 import AboutUs from "./pages/AboutUs/AboutUs.vue";
 import Dashboard from "./pages/Dashboard/Dashboard.vue";
 import DashboardPayoutSetting from "./pages/DashboardPayoutSetting/DashboardPayoutSetting.vue";
+import DashboardPaymentHistory from "./pages/DashboardPaymentHistory/DashboardPaymentHistory.vue";
 
 const routes = [
     {
@@ -27,6 +28,11 @@ const routes = [
         path: "/dashboard-payout-setting",
         name: "Dashboard Payout Setting",
         component: DashboardPayoutSetting
+    },
+    {
+        path: "/dashboard-payment-history",
+        name: "Dashboard Payment History",
+        component: DashboardPaymentHistory
     },
     {
         path: "/get-in-touch",
