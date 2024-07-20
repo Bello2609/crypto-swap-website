@@ -2,7 +2,7 @@
 <!-- eslint-disable no-unused-vars -->
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
-    import { defineProps } from 'vue';
+    import { defineProps, defineEmits } from 'vue';
 
     const props = defineProps({
         type: {
@@ -16,8 +16,10 @@
         placeholder: {
             type: String,
             required: true
-        }
+        },
+        
     })
+    const emit = defineEmits(["update:modelValue"]);
 </script>
 <template>
     <div class="flex flex-col my-3">
@@ -26,6 +28,7 @@
             <input 
                 :type="type" 
                 :placeholder="placeholder" 
+                @input="emit('update:modelValue', $event.target.value)"
                 class="w-full h-full bg-[#F3F9F1] p-2 focus:border-2 focus:border-[#23A9D0] rounded-md" 
             />
         </div>
