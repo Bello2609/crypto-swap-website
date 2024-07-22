@@ -1,4 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
+import { useLogin } from "./Store/loginStore";
 import Home from "./pages/Home/Home.vue";
 import Signin from "./pages/Signin/Signin.vue";
 import Register from "./pages/Register/Register.vue";
@@ -7,6 +8,7 @@ import AboutUs from "./pages/AboutUs/AboutUs.vue";
 import Dashboard from "./pages/Dashboard/Dashboard.vue";
 import DashboardPayoutSetting from "./pages/DashboardPayoutSetting/DashboardPayoutSetting.vue";
 import DashboardPaymentHistory from "./pages/DashboardPaymentHistory/DashboardPaymentHistory.vue";
+
 
 const routes = [
     {
@@ -22,17 +24,20 @@ const routes = [
     {
         path: "/dashboard",
         name: "Dashboard",
-        component: Dashboard
+        component: Dashboard,
+        meta: { requiresAuth: true }
     },
     {
         path: "/dashboard-payout-setting",
         name: "Dashboard Payout Setting",
-        component: DashboardPayoutSetting
+        component: DashboardPayoutSetting,
+        meta: { requiresAuth: true }
     },
     {
         path: "/dashboard-payment-history",
         name: "Dashboard Payment History",
-        component: DashboardPaymentHistory
+        component: DashboardPaymentHistory,
+        meta: { requiresAuth: true }
     },
     {
         path: "/get-in-touch",
@@ -55,5 +60,15 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes
+});
+
+router.beforeEach((to, from, next)=>{
+    const login = useLogin();
+    if(to.meta.requiresAuth && !login.isAuthenticated){
+        next({ name: "Signin" })
+    }else{
+        next();
+    }
 })
+
 export default router;

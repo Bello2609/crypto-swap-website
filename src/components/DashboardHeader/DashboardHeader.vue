@@ -1,18 +1,25 @@
 <script setup>
-    import { ref, onMounted } from "vue";
+    import { ref, onMounted, watch } from "vue";
+    import { useLogin } from "@/Store/loginStore";
     const path = ref(""); 
+    const login = useLogin();
     const pathName  = ()=> {
         let path_url = window.location.pathname;
         console.log(path);
         
         if(path_url == "/dashboard"){
-            path.value = "welcome John"
+            path.value = login.email;
         }else if(path_url == "/dashboard-payout-setting"){
             path.value = "Payout Settings."
         }else if(path_url == "/dashboard-payment-history"){
             path.value = "Payout History."
         }
     }
+    watch(()=> login.email, (newEmail) =>{
+        if(window.location.pathname === "/dashboard"){
+            path.value;
+        }
+    })
     onMounted(()=>{
         pathName();
     })

@@ -4,13 +4,26 @@
     import { ref } from "vue";
     import Input from "../../components/Input/Input.vue"
     import { useRegister } from "../../Store/registerStore"
+   
 
     const register = useRegister();
     const email = ref("");
+    const username = ref("");
     const password = ref("");
     const confirmPassword = ref("");
     const onSubmit = ()=>{
-        console.log("email", email.value);
+        if(password.value !== confirmPassword.value){
+            alert("Password does not match");
+            return false
+        }else{
+            const data = {
+            email: email.value,
+            username: username.value,
+            password: password.value,
+            password2: confirmPassword.value
+        }
+            return register.register(data);
+        }
     }
 </script>
 <template>
@@ -23,9 +36,15 @@
                 <h6 class="text-[#181826] text-xs">Register a new account here.</h6>
                 <form @submit.prevent="onSubmit">
                     <Input type="text" label="Email Address" v-model="email" placeholder="johndoe@emailaddress.com" />
+                    <Input type="text" label="Username" v-model="username" placeholder="john doe" />
                     <Input type="password"  label="Password" v-model="password" placeholder="Password" />
                     <Input type="password"  label="Confirm Password" v-model="confirmPassword" placeholder="Password" />
-                    <button type="submit" class="w-[370px] h-[55px] bg-[#23A9D0] rounded-md my-3 text-[#fff]">Register</button>
+                    <button v-if="register.isLoading" type="submit" class="w-[370px] h-[55px] bg-[#23A9D0] rounded-md my-3 text-[#fff]"> 
+                        Loading...
+                    </button>
+                    <button v-else type="submit" class="w-[370px] h-[55px] bg-[#23A9D0] rounded-md my-3 text-[#fff]"> 
+                        Register
+                    </button>
                 </form>
             </div>
         </div>
