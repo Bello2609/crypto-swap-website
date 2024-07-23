@@ -8,6 +8,7 @@ import AboutUs from "./pages/AboutUs/AboutUs.vue";
 import Dashboard from "./pages/Dashboard/Dashboard.vue";
 import DashboardPayoutSetting from "./pages/DashboardPayoutSetting/DashboardPayoutSetting.vue";
 import DashboardPaymentHistory from "./pages/DashboardPaymentHistory/DashboardPaymentHistory.vue";
+import Verify from "./pages/Verify/Verify.vue";
 
 
 const routes = [
@@ -54,6 +55,11 @@ const routes = [
         name: "Signin",
         component: Signin
     },
+    {
+        path: "/accounts/auth/verify_account/",
+        name: "Verify",
+        component: Verify
+    }
 
 ]
 

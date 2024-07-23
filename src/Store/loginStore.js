@@ -30,7 +30,7 @@ export const useLogin = defineStore("login", {
             console.log(data_data);
         }catch(error){
             this.isLoading = false;
-            console.log(error.response.data.message);
+            alert(error.response.data.message);
         }
         }
     }

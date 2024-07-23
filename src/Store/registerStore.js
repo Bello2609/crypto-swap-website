@@ -11,8 +11,8 @@ export const useRegister = defineStore("register", {
             this.isLoading = true
             const data_data = await axios.post("https://enterprisehubs.onrender.com/accounts/auth/register/", data);
             this.isLoading = false;
-            alert("You have succesfully created your account");
-            window.location.href = "/sign-in"
+            alert("You have succesfully created your account. Check your mail so as to verify your account");
+            // window.location.href = "/sign-in"
          }catch(error){
             this.isLoading = false;
             const errorMessage = err.data?.email.map(msg=> { return msg });
