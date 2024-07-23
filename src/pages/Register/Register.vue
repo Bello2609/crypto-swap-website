@@ -18,7 +18,7 @@
         }else{
             const data = {
             email: email.value,
-            username: username.value,
+            user_name: username.value,
             password: password.value,
             password2: confirmPassword.value
         }

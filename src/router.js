@@ -56,7 +56,7 @@ const routes = [
         component: Signin
     },
     {
-        path: "/accounts/auth/verify_account/",
+        path: "/accounts/auth/verify_account/", 
         name: "Verify",
         component: Verify
     }
