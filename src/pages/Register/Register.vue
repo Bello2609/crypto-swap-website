@@ -21,7 +21,7 @@
             user_name: username.value,
             password: password.value,
             password2: confirmPassword.value,
-            client_type: windows.location.origin
+            client_type: window.location.origin
         }
             return register.register(data);
         }
