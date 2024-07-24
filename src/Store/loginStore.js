@@ -6,7 +6,8 @@ export const useLogin = defineStore("login", {
     state: ()=>({
         access: "",
         refresh: "",
-        email: "",
+        user_name: "",
+        first_name: "",
         isLoading: false,
         isAuthenticated: false
     }),
@@ -22,7 +23,8 @@ export const useLogin = defineStore("login", {
             this.isLoading = true;
             const data_data = await axios.post("https://enterprisehubs.onrender.com/accounts/auth/login/", data);
             this.isLoading = false;
-            this.email = data_data.data.email;
+            this.user_name = data_data.data.user_name;
+            this.first_name = data_data.data.first_name
             this.access = data_data.data?.tokens?.access;
             this.refresh = data_data.data?.tokens?.refresh;
             this.isAuthenticated = true;

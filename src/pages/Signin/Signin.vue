@@ -31,7 +31,7 @@
                 </h4>
                 <h6 class="text-[#181826] text-xs">Login to your account here.</h6>
                 <form @submit.prevent="onSubmit">
-                    <Input type="text" label="Email Address" v-model="email" placeholder="johndoe@emailaddress.com" />
+                    <Input type="email" label="Email Address" v-model="email" placeholder="johndoe@emailaddress.com" />
                     <Input type="password" label="Password" v-model="password" placeholder="Password" />
                     <span class="text-[#141422] text-sm font-bold">Forgot your password? <RouterLink to="/">Reset it here.</RouterLink></span>
                     <button v-if="login.isLoading" class="w-[370px] h-[55px] bg-[#23A9D0] rounded-md my-3 text-[#fff]">

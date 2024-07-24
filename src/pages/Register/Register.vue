@@ -20,7 +20,8 @@
             email: email.value,
             user_name: username.value,
             password: password.value,
-            password2: confirmPassword.value
+            password2: confirmPassword.value,
+            client_type: windows.location.origin
         }
             return register.register(data);
         }
@@ -35,7 +36,7 @@
                 </h4>
                 <h6 class="text-[#181826] text-xs">Register a new account here.</h6>
                 <form @submit.prevent="onSubmit">
-                    <Input type="text" label="Email Address" v-model="email" placeholder="johndoe@emailaddress.com" />
+                    <Input type="email" label="Email Address" v-model="email" placeholder="johndoe@emailaddress.com" />
                     <Input type="text" label="Username" v-model="username" placeholder="john doe" />
                     <Input type="password"  label="Password" v-model="password" placeholder="Password" />
                     <Input type="password"  label="Confirm Password" v-model="confirmPassword" placeholder="Password" />
