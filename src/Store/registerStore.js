@@ -15,7 +15,9 @@ export const useRegister = defineStore("register", {
             // window.location.href = "/sign-in"
          }catch(error){
             this.isLoading = false;
-            const errorMessage = err.data?.email.map(msg=> { return msg });
+            console.log(error)
+            const errorMessage = error.data?.email.map(msg=> { return msg });
+            console.log(errorMessage);
             alert(errorMessage.toString());
          }
         }

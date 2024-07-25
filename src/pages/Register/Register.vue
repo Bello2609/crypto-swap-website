@@ -21,7 +21,7 @@
             user_name: username.value,
             password: password.value,
             password2: confirmPassword.value,
-            client_type: window.location.origin
+            client_type: "crypto-swap"
         }
             return register.register(data);
         }
