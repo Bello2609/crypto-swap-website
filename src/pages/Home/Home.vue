@@ -7,8 +7,8 @@
      <Layout>
           <div class="flex flex-col">
                <div class="flex bg-[#181826] px-16">
-                    <div class="flex flex-col w-[50%]">
-                         <div className="flex flex-col md:px-10 sm:px-10 py-20 font-sans">
+                    <div class="flex flex-col w-[50%] sm:w-full">
+                         <div className="flex flex-col md:px-10  py-20 font-sans">
                               <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>
                               <h4 className="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#fff] leading-[63px]">
                                    Building the Future of Mining Pools.
@@ -26,7 +26,7 @@
                                         Learn more
                                    </RouterLink>
                               </div>
-                              <div class="flex mt-20">
+                              <div class="flex flex-wrap mt-20">
                                    <img :src="images.btc" alt="bitcoin" />
                                    <img class="mx-8" :src="images.dogecoin" alt="dogecoin"  />
                                    <img :src="images.ethereum" alt="ethereum"  />
@@ -35,10 +35,10 @@
                               </div>
                          </div>
                     </div>
-                    <div class="flex w-[50%]"><img :src="images.composition" alt="composition" /></div>
+                    <div class="hidden lg:flex md:flex w-[50%]"><img :src="images.composition" alt="composition" /></div>
                </div>
-               <div class="flex flex-col px-10 my-10">
-                    <div class="flex items-center w-full">
+               <div class="flex flex-col px-10 sm:px-2 my-10">
+                    <div class="flex sm:flex-col items-center w-full sm:w-full">
                          <div class="w-1/2">
                               <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>
                               <h4 className="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#000] leading-[63px]">
@@ -46,7 +46,7 @@
                               </h4>
                          </div>
                          <div class="w-1/2">
-                              <p class="w-[506px] text-[#181826] text-base">
+                              <p class="w-[506px] sm:w-full text-[#181826] text-base">
                                    Completely synergize resource taxing relationships via premier 
                                    niche markets. Professionally cultivate one-to-one customer service
                                    with robust ideas. Dynamically innovate resource-leveling customer 
@@ -54,7 +54,7 @@
                               </p>
                          </div>
                     </div>
-                    <div class="grid grid-cols-3 mt-10">
+                    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mt-10">
                          <div class="w-[370px] h-[362px] bg-[#23A9D0] p-10 rounded-md">
                               <div class="flex items-center justify-center w-[100px] h-[100px] rounded-full bg-[#23A9D0]">
                                    <img :src="images.convertshape" alt="shape">
@@ -93,7 +93,7 @@
                                    <h4 className="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#000] leading-[63px]">
                                         Begin collaboratively administrating sales.
                                    </h4>
-                                   <p className="w-[413px] md:w-fit sm:w-fit flex-wrap font-normal text-base text-[#000] my-3">
+                                   <p className="w-[413px] sm:w-[200px] flex-wrap font-normal text-base text-[#000] my-3">
                                         Efficiently unleash cross-media information without cross-media 
                                         value. Quickly maximize timely deliverables for schemas. With any 
                                         dramatically maintain clicks-and-mortar solutions.
@@ -106,10 +106,10 @@
                                    
                               </div>
                          </div>
-                         <div class="flex w-[50%]"><img :src="images.composition2" alt="composition" /></div>
+                         <div class="hidden lg:flex md:flex w-[50%]"><img :src="images.composition2" alt="composition" /></div>
                     </div>
                     <div class="flex w-full px-10 roundex-md my-10">  
-                         <div class="flex w-[50%]"><img :src="images.composition3" alt="composition" /></div>
+                         <div class="hidden lg:flex md:flex w-[50%]"><img :src="images.composition3" alt="composition" /></div>
                          <div class="flex flex-col w-[50%]">
                               <div className="flex flex-col md:px-10 sm:px-10 py-20 font-sans">
                                    <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>
