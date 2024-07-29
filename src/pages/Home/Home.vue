@@ -35,7 +35,7 @@
                               </div>
                          </div>
                     </div>
-                    <div class="hidden lg:flex md:flex w-[50%]"><img :src="images.composition" alt="composition" /></div>
+                    <div class="sm:hidden lg:flex md:flex w-[50%]"><img :src="images.composition" alt="composition" /></div>
                </div>
                <div class="flex flex-col px-10 sm:px-2 my-10">
                     <div class="flex sm:flex-col items-center w-full sm:w-full">
@@ -106,10 +106,10 @@
                                    
                               </div>
                          </div>
-                         <div class="hidden lg:flex md:flex w-[50%]"><img :src="images.composition2" alt="composition" /></div>
+                         <div class="sm:hidden lg:flex md:flex w-[50%]"><img :src="images.composition2" alt="composition" /></div>
                     </div>
                     <div class="flex w-full px-10 roundex-md my-10">  
-                         <div class="hidden lg:flex md:flex w-[50%]"><img :src="images.composition3" alt="composition" /></div>
+                         <div class="sm:hidden lg:flex md:flex w-[50%]"><img :src="images.composition3" alt="composition" /></div>
                          <div class="flex flex-col w-[50%]">
                               <div className="flex flex-col md:px-10 sm:px-10 py-20 font-sans">
                                    <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>

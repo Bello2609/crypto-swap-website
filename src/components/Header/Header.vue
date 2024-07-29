@@ -140,7 +140,7 @@ const handleNav = () => {
 <template>
   <div class="w-full h-[13vh] bg-[#181826] flex items-center justify-between px-16">
     <!-- Desktop Navbar -->
-    <nav class="hidden md:flex text-[#fff] font-sans list-none cursor-pointer font-bold text-sm">
+    <nav class="sm:hidden md:flex text-[#fff] font-sans list-none cursor-pointer font-bold text-sm">
       <RouterLink to="/" class="hover:text-gray-300">HOME</RouterLink>
       <RouterLink to="/about-us" class="mx-4 hover:text-gray-300">WHY CHOOSE US</RouterLink>
       <RouterLink to="/get-in-touch" class="hover:text-gray-300">GET IN TOUCH</RouterLink>
@@ -150,17 +150,17 @@ const handleNav = () => {
     <img :src="images.pursuit" alt="pursuit" class="w-[215px] h-[45px]" />
 
     <!-- Log In Button -->
-    <RouterLink to="/sign-in" class="hidden md:block font-bold text-sm text-[#fff] hover:text-gray-300">
+    <RouterLink to="/sign-in" class="sm:hidden md:block font-bold text-sm text-[#fff] hover:text-gray-300">
       Log In to Your Account
     </RouterLink>
 
     <!-- Mobile Menu Icon -->
-    <div class="absolute right-16 z-50 sm:block md:hidden" @click="handleNav">
+    <div class="absolute right-10 hidden sm:block md:hidden" @click="handleNav">
       <!-- Conditional rendering of Menu and Close icons -->
-      <!-- <MenuIcon v-if="!nav" class="text-white cursor-pointer" :size="35" />
-      <CloseIcon v-else class="text-white cursor-pointer" :size="35" /> -->
-      <CloseIcon v-if="nav" class="text-white cursor-pointer" :size="50" />
-      <MenuIcon v-else class="text-white cursor-pointer" :size="35" />
+      <MenuIcon v-if="!nav" class="text-white cursor-pointer" :size="35" />
+      <CloseIcon v-else class="text-white cursor-pointer" :size="35" />
+      <!-- <CloseIcon v-if="nav" class="text-white cursor-pointer" :size="50" />
+      <MenuIcon v-else class="text-white cursor-pointer" :size="35" /> -->
       
     </div>
   </div>
@@ -168,7 +168,7 @@ const handleNav = () => {
   <!-- Mobile Menu -->
   <div
     v-if="nav"
-    class="relative top-0 left-0 w-screen h-screen bg-[#181826] flex flex-col items-center justify-center z-50 md:hidden overflow-hidden"
+    class="relative top-0 left-0 w-screen h-screen bg-[#181826] flex flex-col items-center justify-center z-50 md:hidden lg:hidden overflow-hidden"
   >
     <RouterLink
       to="/"

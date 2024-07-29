@@ -6,7 +6,7 @@
 <template>
     <DashboardLayout>
         <div class="flex flex-col p-16">
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-3 sm:grid-cols-1">
                 <div class="flex items-center justify-start p-5 bg-[#38384D] w-[300px] h-[115px] rounded-md">
                     <div class="flex items-center justify-center bg-[#FCAE17] w-[65px] h-[65px] rounded-md">
                         <img :src="images.bucket" alt="mining" />
@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="flex items-center justify-start p-5 bg-[#38384D] w-[300px] h-[115px] rounded-md">
-                    <div class="flex items-center justify-center bg-[#23A9D0] w-[65px] h-[65px] rounded-md">
+                    <div class="flex items-center justify-center bg-[#23A9D0] w-[65px] h-[65px] rounded-md sm:hidden">
                         <img :src="images.dollar" alt="mining" />
                     </div>
                     <div class="ml-5">

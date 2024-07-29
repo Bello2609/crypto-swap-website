@@ -19,7 +19,7 @@
                     What we offer.
                 </h4>
             </div>
-            <div class="grid grid-cols-3 gap-9 mt-10">
+            <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-9 mt-10">
                 <div class="w-[370px] h-[362px] border-2 border-[#23A9D0] p-10 rounded-md">
                     <div class="flex items-center justify-center bg-[#23A9D0] w-[100px] h-[100px] rounded-full bg-[#23A9D0]">
                         <img :src="images.convertshape" alt="shape">
@@ -52,8 +52,8 @@
                 </div>
             </div>
         </div>
-        <div class="flex  bg-[#F3F9F1] px-16 mx-10 rounded-md">
-            <div class="flex flex-col w-[50%]">
+        <div class="flex sm:flex-col  bg-[#F3F9F1] px-16 sm:px-5 mx-10 rounded-md">
+            <div class="flex flex-col w-[50%] sm:w-fit">
                 <div class="flex flex-col md:px-10 sm:px-10 py-20 font-sans">
                     <h6 class="text-[#FCAE17] text-xs">SUBHEADER FOR HERO</h6>
                     <h4 class="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#181826] leading-[63px]">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col text-[#181826] text-base w-[50%] py-20">
+            <div class="flex flex-col text-[#181826] text-base w-[50%] sm:w-fit py-20">
                 <p class="font-bold">
                     Efficiently unleash cross-media information without cross-media value. 
                     Quickly maximize timely deliverables for real-time schemas. Dramatically maintain

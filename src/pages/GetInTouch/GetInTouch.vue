@@ -18,7 +18,7 @@
                 </p>
             </div>
         </div>
-        <div class="flex w-full  justify-evenly my-10 px-10">
+        <div class="flex sm:flex-col w-full  justify-evenly my-10 px-10">
             <div class="flex flex-col w-[30vw]">
                 <h6 class="text-[#FCAE17]">CONTACT FORM</h6>
                 <h4 class="w-[400px] md:w-fit sm:w-[243px] text-3xl md:text-5xl sm:text-4xl font-bold text-[#000]">
@@ -33,7 +33,7 @@
             </div>
             <div class="flex flex-col w-[40vw]">
                 
-                    <p class="text-[#181826] text-sm w-[500px]">
+                    <p class="text-[#181826] text-sm w-[500px] sm:w-fit">
                         Efficiently myocardinate market-driven innovation in open-source 
                         alignments. Dramatically create high-payoff infomediaries rather than 
                         client-centric without any particular delay.

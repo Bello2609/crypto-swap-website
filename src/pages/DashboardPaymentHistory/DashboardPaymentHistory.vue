@@ -31,7 +31,7 @@
 <template>
     <DashboardLayout>
         <div class="grid grid-cols-2 gap-3 px-10">
-            <div class="bg-[#38384D] w-[528px] h-[338px] p-5 rounded-md">
+            <div class="bg-[#38384D] w-[528px] sm:w-[300px] h-[338px] p-5 rounded-md">
                 <div class="flex items-center">
                     <h5 class="text-lg text-[#fff] font-bold ml-2">Request Payouts</h5>
                 </div>

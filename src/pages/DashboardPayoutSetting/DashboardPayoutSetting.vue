@@ -46,8 +46,8 @@
 </script>
 <template>
     <DashboardLayout>
-        <div class="grid grid-cols-2 gap-3 p-5">
-            <div v-for="payout in payoutSetting" :key="payout.crypto" class="bg-[#38384D] w-[528px] h-[338px] p-5 rounded-md">
+        <div class="grid grid-cols-2 sm:grid-cols-1 gap-3 p-5">
+            <div v-for="payout in payoutSetting" :key="payout.crypto" class="bg-[#38384D] w-[528px] sm:w-fit h-[338px] p-5 rounded-md">
                 <div class="flex items-center">
                     <img :src="payout.media" alt="bitcoin" />
                     <h5 class="text-lg text-[#fff] font-bold ml-2">{{ payout.crypto }}</h5>
