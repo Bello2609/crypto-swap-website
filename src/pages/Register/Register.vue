@@ -28,8 +28,8 @@
     }
 </script>
 <template>
-    <div class="flex w-screen h-screen">
-        <div class="flex items-center justify-center w-[50%] sm:w-fit bg-[#141422]">
+    <div class="flex w-screen h-screen sm:overflow-hidden">
+        <div class="flex items-center justify-center w-[50%] sm:w-full bg-[#141422]">
             <div  class="bg-[#fff] w-[430px] h-auto rounded-md p-5 font-sans">
                 <h4 class="w-[400px] md:w-fit sm:w-[243px] text-xl font-bold text-[#181826]">
                     Register

@@ -144,6 +144,7 @@ const handleNav = () => {
       <RouterLink to="/" class="hover:text-gray-300">HOME</RouterLink>
       <RouterLink to="/about-us" class="mx-4 hover:text-gray-300">WHY CHOOSE US</RouterLink>
       <RouterLink to="/get-in-touch" class="hover:text-gray-300">GET IN TOUCH</RouterLink>
+      <RouterLink to="/register" class="ml-4 hover:text-gray-300">REGISTER</RouterLink>
     </nav>
 
     <!-- Logo -->
@@ -197,6 +198,13 @@ const handleNav = () => {
       @click="handleNav"
     >
       Log In to Your Account
+    </RouterLink>
+    <RouterLink
+      to="/register"
+      class="font-bold text-xl text-[#fff] hover:text-gray-300"
+      @click="handleNav"
+    >
+      Register
     </RouterLink>
   </div>
 </template>

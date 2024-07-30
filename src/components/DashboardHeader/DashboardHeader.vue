@@ -1,9 +1,7 @@
 <script setup>
     import { ref, onMounted, watch, defineProps } from "vue";
     import { useLogin } from "@/Store/loginStore";
-    import MenuIcon from "vue-material-design-icons/Menu.vue";
-    import CloseIcon from "vue-material-design-icons/Close.vue";
-    import 'vue-material-design-icons/styles.css';
+    import * as images from "../../images"
 
 
     const props = defineProps({
@@ -45,7 +43,9 @@
         <div class="flex items-center justify-between w-full">
             <h4 class="text-xl text-[#fff]">{{ path }}</h4>
             <div class="flex items-center">
-                <div class="bg-[#2C2C3A] w-[50px] h-[50px] rounded-full"></div>
+                <div class="flex bg-[#2C2C3A] w-[50px] h-[50px] rounded-full">
+                    <img :src="images.dollar" alt="bitcoin" />
+                </div>
                 <p class="text-[#fff] font-base ml-2">{{ login.first_name }}</p>
             </div>
         </div>
