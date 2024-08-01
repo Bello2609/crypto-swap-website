@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-[#38384D] w-full h-[289px] rounded-md p-5">
+            <div class="bg-[#38384D] w-full h-[289px] sm:h-auto rounded-md p-5">
                 <h5 class="text-sm text-[#fff] font-bold">Current Coin</h5>
                 <table class="border-collapse w-full mt-5">
                     <thead>

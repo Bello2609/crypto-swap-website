@@ -1,32 +1,38 @@
 <script setup>
     import DashboardLayout from "../DashboardLayout/DashboardLayout.vue";
+    import { ref, onMounted } from "vue";
+    const amount = ref("");
+    const crypto = ref("");
+    const tableData = ref([]);
+    const saveToLocalStorage = ()=>{
+        localStorage.setItem("tableData", JSON.stringify(tableData.value));
+    }
+    const generateId = ()=>{
+        return Math.floor(Math.random() * 100000000);
+    }
+    console.log(generateId());
+    const save = ()=>{
+        const nd = new Date().toDateString();
+        const data = {
+            id: generateId(),
+            crypto_amount: `${amount.value} ${crypto.value}`,
+            date: nd,
+            column: "--"
+        }
+        tableData.value.push(data);
+        saveToLocalStorage();
+    }
+    const deleteTableData = (id)=>{
+        tableData.value = tableData.value.filter(data=> data.id !== id);
+        saveToLocalStorage();
 
-    const tableData = [
-        {
-            crypto_amount: "0.009382 BTC" 
-        },
-        {
-            crypto_amount: "0.0241 ETH" 
-        },
-        {
-            crypto_amount: "0.4732 LTC" 
-        },
-        {
-            crypto_amount: "0.009382 BTC" 
-        },
-        {
-            crypto_amount: "0.0241 ETH" 
-        },
-        {
-            crypto_amount: "0.4732 LTC" 
-        },
-        {
-            crypto_amount: "0.009382 BTC" 
-        },
-        {
-            crypto_amount: "0.0241 ETH" 
-        },
-    ]
+    }
+    onMounted(()=>{
+        const savedTableData = JSON.parse(localStorage.getItem("tableData")) || [];
+        if(savedTableData){
+            tableData.value = savedTableData;
+        }
+    })
 </script>
 <template>
     <DashboardLayout>
@@ -35,20 +41,15 @@
                 <div class="flex items-center">
                     <h5 class="text-lg text-[#fff] font-bold ml-2">Request Payouts</h5>
                 </div>
-                <form>
+                <form @submit.prevent="save">
                     <div class="my-5">
                         <label class="text-[#fff]">Select Coin</label>
-                        <!-- <input
-                            type="type" 
-                            placeholder="payout.placeholder1" 
-                            class="mt-2 w-full h-full text-[#fff] bg-[#2C2C3A] p-2 outline-none border-2 border-[#38384D] rounded-md" 
-                        /> -->
-                        <select id="countries" class="mt-3 bg-[#2C2C3A] border border-[#38384D] text-[#fff] text-sm rounded-lg  focus:border-[#38384D] block w-full p-2.5">
+                        <select v-model="crypto" id="countries" class="mt-3 bg-[#2C2C3A] border border-[#38384D] text-[#fff] text-sm rounded-lg  focus:border-[#38384D] block w-full p-2.5">
                             <option selected>Choose a coin</option>
-                            <option value="US">Bitcoin</option>
-                            <option value="CA">Ethereum</option>
-                            <option value="FR">Litecoin</option>
-                            <option value="DE">Tether (USDT)</option>
+                            <option value="BTC">Bitcoin</option>
+                            <option value="ETH">Ethereum</option>
+                            <option value="LTC">Litecoin</option>
+                            <option value="USDT">Tether (USDT)</option>
                     </select>
                     </div>
                     <div class="my-5">
@@ -56,6 +57,7 @@
                         <input 
                             type="type" 
                             placeholder="$0.00" 
+                            v-model="amount"
                             class="mt-2 w-full h-full text-[#fff] bg-[#2C2C3A] p-2 outline-none border-2 border-[#38384D] rounded-md" 
                         />
                     </div>
@@ -70,15 +72,15 @@
                             <th>Amount IN</th>
                             <th>Date</th>
                             <th>3rd Colmn</th>
-                            <th>Fourth Colmn</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody class="text-sm text-[#fff] font-bold">
                         <tr v-for="data in tableData" class="text-center">
                             <td class="p-5">{{ data.crypto_amount }}</td>
-                            <td>Jan. 15th 2021</td>
-                            <td>--</td>
-                            <td>--</td>
+                            <td>{{ data.date }}</td>
+                            <td>{{ data.column }}</td>
+                            <td @click="deleteTableData(data.id)" class="text-red-500 cursor-pointer">delete</td>
                         </tr>
                     </tbody>
                 </table>

@@ -10,7 +10,7 @@
 
 
 <template>
-    <div class="w-full h-[1200px] flex">
+    <div class="w-full sm:w-full sm:overflow-x-hidden h-[1200px] sm:h-full flex">
         <!-- sidebar -->
         <Sidebar v-bind="isNav" />
         <!-- dashboard content -->
