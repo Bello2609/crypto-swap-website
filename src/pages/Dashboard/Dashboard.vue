@@ -1,7 +1,15 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+    import { onBeforeMount, ref } from "vue";
     import DashboardLayout from "../DashboardLayout/DashboardLayout.vue";
     import * as images from "../../images";
+    import { useMarket } from "../../Store/marketData";
+    const market = useMarket();
+
+
+    onBeforeMount(()=>{
+        market.getMarketData();
+    })
 </script>
 <template>
     <DashboardLayout>
@@ -12,8 +20,8 @@
                         <img :src="images.bucket" alt="mining" />
                     </div>
                     <div class="ml-5">
-                        <h5 class="text-[#CACADA] font-bold text-sm">Miners online</h5>
-                        <h6 class="text-base text-[#fff] font-bold">13,293</h6>
+                        <h5 class="text-[#CACADA] font-bold text-sm">BTC/USD</h5>
+                        <h6 class="text-base text-[#fff] font-bold">$ {{ Number(market.btc).toFixed(2) }}</h6>
                     </div>
                 </div>
                 <div class="flex items-center justify-start p-5 bg-[#38384D] w-[300px] h-[115px] rounded-md">
@@ -21,8 +29,8 @@
                         <img :src="images.dollar" alt="mining" />
                     </div>
                     <div class="ml-5">
-                        <h5 class="text-[#CACADA] font-bold text-sm">Revenue in Last 24 hours</h5>
-                        <h6 class="text-base text-[#fff] font-bold">$5,392 USD</h6>
+                        <h5 class="text-[#CACADA] font-bold text-sm">ETH/USD</h5>
+                        <h6 class="text-base text-[#fff] font-bold">${{ Number(market.eth).toFixed(2) }}</h6>
                     </div>
                 </div>
                 <div class="flex items-center justify-start p-5 bg-[#38384D] w-[300px] h-[115px] rounded-md">
@@ -31,7 +39,7 @@
                     </div>
                     <div class="ml-5">
                         <h5 class="text-[#CACADA] font-bold text-sm">Revenue in last 30 days</h5>
-                        <h6 class="text-base text-[#fff] font-bold">Statistic Number Three</h6>
+                        <h6 class="text-base text-[#fff] font-bold">${{ Number((market.btc + market.eth)/2).toFixed(2) }}</h6>
                     </div>
                 </div>
             </div>
@@ -57,7 +65,7 @@
                             <input 
                                 type="type" 
                                 placeholder="Set a price..." 
-                                class="w-full h-full bg-[#2C2C3A] p-2 outline-none border-2 border-[#38384D] rounded-md" 
+                                class="w-full h-full bg-[#2C2C3A] text-[#fff] p-2 outline-none border-2 border-[#38384D] rounded-md" 
                             />
                         </div>
                     </div>
