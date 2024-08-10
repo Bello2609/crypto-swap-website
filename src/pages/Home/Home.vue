@@ -118,7 +118,7 @@
                                         At the end of the day, going forward issues.
                                    </h4>
                                    <div className="flex justify-center items-center mt-8 w-[176px] h-[57px] font-medium bg-[#23A9D0] text-[#fff] p-3 w-40 h-12 rounded-full">
-                                        <RouterLink to="/">asset_id_quote
+                                        <RouterLink to="/">
                                              Call to Action
                                         </RouterLink>
                                    </div>
